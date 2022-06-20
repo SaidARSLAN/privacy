@@ -1,0 +1,11 @@
+BASIC==> find dir --actions
+EXAMPLE 1==> find demo -print(can provide print files under demo directory)
+EXAMPLE 2==> find demo -name "foo.txt" (filter action)
+EXAMPLE 3==> find demo -path "*/istanbul/*" (show all files that have 'istanbul')
+EXAMPLE 4==> find demo -name "*.txt" -delete(for deleting)
+EXAMPLE 5==> find demo -name "ankara*" -type f(show all files not directory)
+EXAMPLE 6==> find demo -not -name "*.txt" (show not txt files)
+[EXAMPLE]7=> find demore -name "*.txt" -exec echo "Found: " {} \;
+EXAMPLE 8==> find / perm -u=s -type f 2>/dev/null
+EXAMPLE 9==> find . -type f -exec grep -i -I "PASSWORD" {} /dev/null\ {} /dev/null\;
+EXAMPLE 10==> find / -perm 04000 -type f -ls 2>/dev/null

